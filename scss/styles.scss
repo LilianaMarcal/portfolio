@@ -1,0 +1,356 @@
+  /* Liliana Marçal */
+
+  @import "reset";
+  @import "fonts";
+  @import "variables";
+
+  @mixin stylefonts ($size: 16px, $weight:normal, $line: 24px, $family:sans-serif){
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line;
+    font-family: $family;
+  }
+
+  @mixin center() {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  @mixin link {
+    cursor: auto;
+    text-decoration: underline;
+  }
+
+  @mixin size($width, $height: $width) {
+      width: $width;
+      height: $height;
+  }
+
+  #illustration{
+    color: rgb(235, 0, 255);
+    font-size: 30px;
+  }
+
+  .nome{
+    font: 25px "MyFonTitlee", helvetica, arial, sans-serif;
+    white-space: pre;
+    color: $color-main;
+    padding-top:5%;
+    margin-left: 5%;
+    position: absolute;
+  }
+
+  @keyframes cover {
+    0% {
+      opacity: 1;
+      transform: translateX(-320px);
+    }
+    25% {
+      opacity: 2;
+      transform: translateX(-320px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  .cover {
+    animation: cover 5s ease 1;
+    transform: translateX(0px);
+    padding-left: 20%;
+    @include size (55%);
+  }
+
+  a:link, a:visited {
+    @include link;
+    color: rgb(255, 255, 255);
+  }
+
+  a:hover, a:active {
+   @include link;
+   color: $color-main2;
+  }
+
+  .menu {
+    background-color: $color-main;
+    font: 22px "MyFonTitlee", helvetica, arial, sans-serif;
+    color: rgb(255, 255, 255);
+    height: 120px;
+  }
+
+  .menu:hover {
+    background-color: rgb(17, 22, 150);
+    transition: 0.6s ease-in;
+  }
+
+  .menu-fixo {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+  }
+
+  .menu ul li {
+    display: inline-block;
+    margin-left: 9em;
+    margin-top: 30px;
+    padding: 6px;
+  }
+
+  #about, #mywork, #mycontacts {
+    font: 45px "MyFonTitlee", helvetica, arial, sans-serif;
+    padding-top: 20%;
+    padding-left: 13%;
+    padding-bottom: 10px;
+    white-space: pre;
+    text-transform: uppercase;
+   }
+
+   #mycontacts{
+     padding-top: 10%;
+   }
+
+   .text p {
+    padding: 3% 52% 0 1%;
+    font: "MyFonTtext";
+    @include stylefonts;
+    line-height: 23px;
+    margin-left: 200px;
+    padding-bottom: 20px;
+    align-items: flex-start;
+   }
+
+   .text img:hover{
+     cursor: cell;
+    -webkit-filter: opacity(.5);
+    filter: opacity(.5);
+   }
+   .text img {
+    float: right;
+    align-content: flex-end;
+    border-top: 3px $color-main solid;
+    border-right: 3px $color-main solid;
+  }
+
+  p.linkk {
+    font: 20px "MyFonTitlee", helvetica, arial, sans-serif;
+    padding-bottom: 8px;
+    padding-left: 17%;
+  }
+
+  a.links:link, a.links:visited {
+    @include link ;
+    color: rgb(149, 149, 149);
+    transition: 0.6s ease-in;
+  }
+
+  a.links:hover, a.links:active {
+   color: lighten($color-main, 10%);
+  }
+
+   .projects {
+     padding: 0 10%;
+     @include center;
+   }
+
+   .projects img {
+     width: 300px;
+   }
+
+   .projects img:hover {
+     -webkit-filter: blur(3px);
+     filter: blur(3px);
+  	 transition: 0.3s ease-in;
+   }
+
+   .contacts1, .contacts2, .contacts3 {
+     font: 20px "MyFonTtext", Helvetica-Normal Regular, sans-serif;
+     padding-top: 3px;
+     padding-left: 16%;
+   }
+
+   .contacts3{
+     padding-bottom: 50px;
+   }
+
+/* pagina projecto1 */
+
+.proj1 h1{
+  font: 45px "MyFonTitlee", helvetica, arial, sans-serif;
+  padding-top: 2%;
+  padding-left: 8%;
+  white-space: pre;
+ }
+
+ .proj1 p{
+   padding: 1% 50% 0 8%;
+   font: 16px "MyFonTtext", Helvetica-Normal Regular, sans-serif;
+   line-height: 24px;
+
+   padding-bottom: 20px;
+ }
+
+.proj1 img{
+  width: 100%;
+}
+
+  /* responsive */
+  @media screen and (min-width:320px) and (max-width:374px){
+
+    p.nome{
+      font-size: 10px;
+      padding-top:23%;
+      margin-left: 36%;
+      padding-bottom: 4%;
+    }
+
+    .ilustração{
+      top: 12%;
+    }
+
+    .logotipo{
+      width: 2%;
+      padding-left: 49%;
+      padding-bottom: 14%;
+      padding-top: 0%;
+    }
+
+    .menu {
+      padding-top: 3%;
+    }
+
+    .menu li{
+      font-size: 5px;
+      height: 4em;
+      width: 11%;
+      margin-left: 11em;
+    }
+
+    #about{
+      font-size: 17px;
+     }
+
+     p{
+      padding: 3% 10% 0 1%;
+      font-size: 10px;
+      line-height: 15px;
+      margin-left: 40px;
+      padding-bottom: 20px;
+     }
+
+     .foto{
+      border-width: 2px;
+      top: 80%;
+      left: 55%;
+    }
+
+    p.linkk{
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+
+  @media screen and (min-width:375px) and (max-width:799px){
+
+    p.nome{
+      font-size: 15px;
+      margin-left: 33%;
+    }
+
+    .ilustração{
+      top: 11%;
+    }
+
+    .logotipo{
+      width: 3%;
+    }
+
+    .menu li{
+      font-size: 7px;
+      height: 4em;
+      width: 12%;
+      margin-left: 9em;
+    }
+
+    #about{
+      font-size: 20px;
+     }
+
+     p{
+      padding: 3% 10% 0 1%;
+      font-size: 10px;
+      line-height: 16px;
+      margin-left: 52px;
+      padding-bottom: 20px;
+     }
+
+     .foto{
+      border-width: 3px;
+      top: 80%;
+      left: 55%;
+    }
+
+    p.linkk{
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+
+  @media screen and (min-width:800px) and (max-width:1023px){
+
+    p.nome{
+      font-size: 25px;
+      padding-top:23%;
+      margin-left: 36%;
+      padding-bottom: 4%;
+    }
+
+    .ilustração{
+      top: 17%;
+    }
+
+    .logotipo{
+      width: 3%;
+      padding-left: 49%;
+      padding-bottom: 14%;
+      padding-top: 0%;
+    }
+
+    .menu {
+      padding-top: 3%;
+    }
+
+    .menu li{
+      font-size: 15px;
+      height: 4em;
+      width: 13%;
+      margin-left: 9em;
+    }
+
+    #about{
+      font-size: 30px;
+      padding-left: 8%;
+     }
+
+     p{
+      padding: 3% 50% 0 4%;
+      font-size: 14px;
+      line-height: 20px;
+      margin-left: 50px;
+      padding-bottom: 20px;
+     }
+
+     .foto{
+      border-width: 3px;
+      top: 65%;
+      left: 60%;
+      width: 30%;
+    }
+
+    p.linkk{
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
