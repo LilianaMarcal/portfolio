@@ -1,0 +1,25 @@
+/* Liliana Marçal */
+
+
+@mixin stylefonts ($size: 16px, $weight:normal, $line: 24px, $family:sans-serif){
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line;
+  font-family: $family;
+}
+
+@mixin center() {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin link {
+  cursor: auto;
+  text-decoration: underline;
+}
+
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}

@@ -55,6 +55,7 @@ table {
 }
 
 /*Fim da reset*/
+/* Liliana Marçal */
 @font-face {
   font-family: "MyFonTitlee";
   src: url("fonts/GothamBold.ttf");
@@ -70,11 +71,7 @@ table {
 }
 
 /* Liliana Marçal */
-#illustration {
-  color: #eb00ff;
-  font-size: 30px;
-}
-
+/* Liliana Marçal */
 .nome {
   font: 25px "MyFonTitlee", helvetica, arial, sans-serif;
   white-space: pre;
@@ -100,7 +97,7 @@ table {
 }
 
 .cover {
-  animation: cover 5s ease 1;
+  animation: cover 3s ease-in 1;
   transform: translateX(0px);
   padding-left: 20%;
   width: 55%;
@@ -123,7 +120,7 @@ a:hover, a:active {
   background-color: black;
   font: 22px "MyFonTitlee", helvetica, arial, sans-serif;
   color: white;
-  height: 120px;
+  height: 90px;
 }
 
 .menu:hover {
@@ -135,19 +132,19 @@ a:hover, a:active {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 70px;
+  height: 90px;
 }
 
 .menu ul li {
   display: inline-block;
-  margin-left: 9em;
+  margin-left: 10.4em;
   margin-top: 30px;
   padding: 6px;
 }
 
 #about, #mywork, #mycontacts {
   font: 45px "MyFonTitlee", helvetica, arial, sans-serif;
-  padding-top: 20%;
+  padding-top: 15%;
   padding-left: 13%;
   padding-bottom: 10px;
   white-space: pre;
@@ -167,7 +164,7 @@ a:hover, a:active {
   font-family: sans-serif;
   line-height: 23px;
   margin-left: 200px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   align-items: flex-start;
 }
 
@@ -185,9 +182,9 @@ a:hover, a:active {
 }
 
 p.linkk {
-  font: 20px "MyFonTitlee", helvetica, arial, sans-serif;
-  padding-bottom: 8px;
-  padding-left: 17%;
+  font: 22px "MyFonTitlee", helvetica, arial, sans-serif;
+  padding-bottom: 1em;
+  padding-left: 16%;
 }
 
 a.links:link, a.links:visited {
@@ -212,12 +209,6 @@ a.links:hover, a.links:active {
   width: 300px;
 }
 
-.projects img:hover {
-  -webkit-filter: blur(3px);
-  filter: blur(3px);
-  transition: 0.3s ease-in;
-}
-
 .contacts1, .contacts2, .contacts3 {
   font: 20px "MyFonTtext", Helvetica-Normal Regular, sans-serif;
   padding-top: 3px;
@@ -228,154 +219,576 @@ a.links:hover, a.links:active {
   padding-bottom: 50px;
 }
 
-/* pagina projecto1 */
-.proj1 h1 {
-  font: 45px "MyFonTitlee", helvetica, arial, sans-serif;
-  padding-top: 2%;
+/* pagina projectos */
+.proj1 h1, .proj2 h1, .proj3 h1, .proj4 h1, .proj5 h1, .proj6 h1, .proj7 h1, .proj8 h1, .proj9 h1 {
+  font: 40px "MyFonTitlee", helvetica, arial, sans-serif;
+  padding-top: 3%;
   padding-left: 8%;
   white-space: pre;
 }
 
-.proj1 p {
-  padding: 1% 50% 0 8%;
-  font: 16px "MyFonTtext", Helvetica-Normal Regular, sans-serif;
-  line-height: 24px;
+.proj1 p, .proj2 p, .proj3 p, .proj4 p, .proj5 p, .proj6 p, .proj7 p, .proj8 p, .proj9 p {
+  padding: 1% 60% 0 8%;
+  font: 14px "MyFonTtext", Helvetica-Normal Regular, sans-serif;
+  line-height: 20px;
   padding-bottom: 20px;
 }
 
-.proj1 img {
-  width: 100%;
+.proj1 img, .proj2 img, .proj3 img, .proj4 img, .proj5 img, .proj6 img, .proj7 img, .proj8 img, .proj9 img {
+  width: 30%;
+  margin-top: 3em;
+}
+
+.img1 {
+  padding-left: 60px;
 }
 
 /* responsive */
 @media screen and (min-width: 320px) and (max-width: 374px) {
-  p.nome {
-    font-size: 10px;
-    padding-top: 23%;
-    margin-left: 36%;
-    padding-bottom: 4%;
+  .nome {
+    font-size: 6px;
   }
-  .ilustração {
-    top: 12%;
-  }
-  .logotipo {
-    width: 2%;
-    padding-left: 49%;
-    padding-bottom: 14%;
-    padding-top: 0%;
+  @keyframes cover {
+    0% {
+      opacity: 1;
+      transform: translateX(-70px);
+    }
+    25% {
+      opacity: 2;
+      transform: translateX(-70px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
   }
   .menu {
-    padding-top: 3%;
+    font-size: 7px;
+    height: 30px;
   }
-  .menu li {
-    font-size: 5px;
-    height: 4em;
-    width: 11%;
-    margin-left: 11em;
+  .menu-fixo {
+    height: 30px;
   }
-  #about {
-    font-size: 17px;
+  .menu ul li {
+    margin-left: 5.2em;
+    margin-top: 4.8px;
+    padding: 5px;
   }
-  p {
-    padding: 3% 10% 0 1%;
-    font-size: 10px;
-    line-height: 15px;
-    margin-left: 40px;
+  #about, #mywork, #mycontacts {
+    font-size: 15px;
+    padding-top: 8%;
+    padding-left: 5%;
+    padding-bottom: 7px;
+  }
+  #mycontacts {
+    padding-top: 10%;
+  }
+  .text p {
+    font-size: 7px;
+    padding: 0 52% 0 2%;
+    line-height: 9px;
+    margin-left: 7px;
     padding-bottom: 20px;
   }
-  .foto {
-    border-width: 2px;
-    top: 80%;
-    left: 55%;
+  .text img {
+    width: 30%;
+    margin-right: 18%;
   }
   p.linkk {
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 9px;
+    padding-bottom: 6px;
+    padding-left: 5%;
+  }
+  .projects {
+    padding: 0 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .projects img {
+    width: 70px;
+  }
+  .contacts1, .contacts2, .contacts3 {
+    font-size: 10px;
+    padding-top: 2px;
+    padding-left: 9%;
+  }
+  .contacts3 {
+    padding-bottom: 40px;
+  }
+  /* pagina projectos */
+  .proj1 h1, .proj2 h1, .proj3 h1, .proj4 h1, .proj5 h1, .proj6 h1, .proj7 h1, .proj8 h1, .proj9 h1 {
+    font-size: 20px;
+    padding-top: 8%;
+    padding-left: 12%;
+  }
+  .proj1 p, .proj2 p, .proj3 p, .proj4 p, .proj5 p, .proj6 p, .proj7 p, .proj8 p, .proj9 p {
+    padding: 1% 30% 0 12%;
+    font-size: 8px;
+    line-height: 9px;
+    padding-bottom: 5px;
+  }
+  .proj1 img, .proj2 img, .proj3 img, .proj4 img, .proj5 img, .proj6 img, .proj7 img, .proj8 img, .proj9 img {
+    width: 28%;
+    margin-top: 1em;
+  }
+  .img1 {
+    padding-left: 20px;
   }
 }
 
 @media screen and (min-width: 375px) and (max-width: 799px) {
-  p.nome {
-    font-size: 15px;
-    margin-left: 33%;
-  }
-  .ilustração {
-    top: 11%;
-  }
-  .logotipo {
-    width: 3%;
-  }
-  .menu li {
-    font-size: 7px;
-    height: 4em;
-    width: 12%;
-    margin-left: 9em;
-  }
-  #about {
-    font-size: 20px;
-  }
-  p {
-    padding: 3% 10% 0 1%;
+  .nome {
     font-size: 10px;
-    line-height: 16px;
-    margin-left: 52px;
+  }
+  @keyframes cover {
+    0% {
+      opacity: 1;
+      transform: translateX(-90px);
+    }
+    25% {
+      opacity: 2;
+      transform: translateX(-90px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  .menu {
+    font-size: 8.7px;
+    height: 30px;
+  }
+  .menu-fixo {
+    height: 30px;
+  }
+  .menu ul li {
+    margin-left: 5.9em;
+    margin-top: 5px;
+    padding: 5px;
+  }
+  #about, #mywork, #mycontacts {
+    font-size: 17px;
+    padding-top: 8%;
+    padding-left: 8%;
+    padding-bottom: 9px;
+  }
+  #mycontacts {
+    padding-top: 10%;
+  }
+  .text p {
+    font-size: 8.2px;
+    padding: 0 49% 0 6%;
+    line-height: 9.5px;
+    margin-left: 7px;
     padding-bottom: 20px;
   }
-  .foto {
-    border-width: 3px;
-    top: 80%;
-    left: 55%;
+  .text img {
+    width: 32%;
+    margin-right: 8%;
   }
   p.linkk {
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 10.2px;
+    padding-bottom: 6px;
+    padding-left: 8%;
+  }
+  .projects {
+    padding: 0 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .projects img {
+    width: 85px;
+  }
+  .contacts1, .contacts2, .contacts3 {
+    font-size: 11.2px;
+    padding-top: 2px;
+    padding-left: 12%;
+  }
+  .contacts3 {
+    padding-bottom: 40px;
+  }
+  /* pagina projectos */
+  .proj1 h1, .proj2 h1, .proj3 h1, .proj4 h1, .proj5 h1, .proj6 h1, .proj7 h1, .proj8 h1, .proj9 h1 {
+    font-size: 19.5px;
+    padding-top: 10%;
+    padding-left: 12%;
+  }
+  .proj1 p, .proj2 p, .proj3 p, .proj4 p, .proj5 p, .proj6 p, .proj7 p, .proj8 p, .proj9 p {
+    padding: 1% 30% 0 12%;
+    font-size: 8.4px;
+    line-height: 10px;
+    padding-bottom: 5px;
+  }
+  .proj1 img, .proj2 img, .proj3 img, .proj4 img, .proj5 img, .proj6 img, .proj7 img, .proj8 img, .proj9 img {
+    width: 29%;
+    margin-top: 1.2em;
+  }
+  .img1 {
+    padding-left: 18px;
   }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1023px) {
-  p.nome {
-    font-size: 25px;
-    padding-top: 23%;
-    margin-left: 36%;
-    padding-bottom: 4%;
+  .nome {
+    font-size: 20px;
   }
-  .ilustração {
-    top: 17%;
-  }
-  .logotipo {
-    width: 3%;
-    padding-left: 49%;
-    padding-bottom: 14%;
-    padding-top: 0%;
+  @keyframes cover {
+    0% {
+      opacity: 1;
+      transform: translateX(-140px);
+    }
+    25% {
+      opacity: 2;
+      transform: translateX(-140px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
   }
   .menu {
-    padding-top: 3%;
+    font-size: 23px;
+    height: 72px;
   }
-  .menu li {
-    font-size: 15px;
-    height: 4em;
-    width: 13%;
-    margin-left: 9em;
+  .menu-fixo {
+    height: 72px;
   }
-  #about {
-    font-size: 30px;
+  .menu ul li {
+    margin-left: 5.2em;
+    margin-top: 15px;
+    padding: 4px;
+  }
+  #about, #mywork, #mycontacts {
+    font-size: 36px;
+    padding-top: 8%;
     padding-left: 8%;
+    padding-bottom: 9px;
   }
-  p {
-    padding: 3% 50% 0 4%;
-    font-size: 14px;
-    line-height: 20px;
-    margin-left: 50px;
-    padding-bottom: 20px;
+  #mycontacts {
+    padding-top: 12%;
   }
-  .foto {
-    border-width: 3px;
-    top: 65%;
-    left: 60%;
-    width: 30%;
+  .text p {
+    font-size: 22.3px;
+    padding: 0 49% 0 7%;
+    line-height: 24px;
+    margin-left: 7px;
+    padding-bottom: 40px;
+  }
+  .text img {
+    width: 38%;
+    margin-right: 8%;
   }
   p.linkk {
+    font-size: 25px;
+    padding-bottom: 15px;
+    padding-left: 8%;
+  }
+  .projects {
+    padding: 0 9%;
+  }
+  .projects img {
+    width: 200px;
+  }
+  .contacts1, .contacts2, .contacts3 {
+    font-size: 25px;
+    padding-top: 3px;
+    padding-left: 11%;
+  }
+  .contacts3 {
+    padding-bottom: 85px;
+  }
+  /* pagina projectos */
+  .proj1 h1, .proj2 h1, .proj3 h1, .proj4 h1, .proj5 h1, .proj6 h1, .proj7 h1, .proj8 h1, .proj9 h1 {
+    font-size: 45px;
+    padding-top: 10%;
+    padding-left: 12%;
+  }
+  .proj1 p, .proj2 p, .proj3 p, .proj4 p, .proj5 p, .proj6 p, .proj7 p, .proj8 p, .proj9 p {
+    padding: 1% 40% 0 12%;
+    font-size: 20px;
+    line-height: 23px;
+    padding-bottom: 5px;
+  }
+  .proj1 img, .proj2 img, .proj3 img, .proj4 img, .proj5 img, .proj6 img, .proj7 img, .proj8 img, .proj9 img {
+    width: 29%;
+    margin-top: 1.2em;
+  }
+  .img1 {
+    padding-left: 45px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+  .nome {
+    font-size: 26px;
+  }
+  @keyframes cover {
+    0% {
+      opacity: 1;
+      transform: translateX(-150px);
+    }
+    25% {
+      opacity: 2;
+      transform: translateX(-150px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  .menu {
+    font-size: 27px;
+    height: 82px;
+  }
+  .menu-fixo {
+    height: 82px;
+  }
+  .menu ul li {
+    margin-left: 5.2em;
+    margin-top: 22px;
+    padding: 6px;
+  }
+  #about, #mywork, #mycontacts {
+    font-size: 38px;
+    padding-top: 8%;
+    padding-left: 8%;
+    padding-bottom: 15px;
+  }
+  #mycontacts {
+    padding-top: 12%;
+  }
+  .text p {
+    font-size: 20px;
+    padding: 0 49% 0 7%;
+    line-height: 25px;
+    margin-left: 7px;
+    padding-bottom: 50px;
+    padding-top: 1em;
+  }
+  .text img {
+    width: 38%;
+    margin-right: 8%;
+  }
+  p.linkk {
+    font-size: 28px;
+    padding-bottom: 17px;
+    padding-left: 8%;
+  }
+  .projects {
+    padding: 0 9%;
+  }
+  .projects img {
+    width: 260px;
+  }
+  .contacts1, .contacts2, .contacts3 {
+    font-size: 25px;
+    padding-top: 3px;
+    padding-left: 11%;
+  }
+  .contacts3 {
+    padding-bottom: 85px;
+  }
+  /* pagina projectos */
+  .proj1 h1, .proj2 h1, .proj3 h1, .proj4 h1, .proj5 h1, .proj6 h1, .proj7 h1, .proj8 h1, .proj9 h1 {
+    font-size: 45px;
+    padding-top: 10%;
+    padding-left: 12%;
+  }
+  .proj1 p, .proj2 p, .proj3 p, .proj4 p, .proj5 p, .proj6 p, .proj7 p, .proj8 p, .proj9 p {
+    padding: 1% 40% 0 12%;
+    font-size: 20px;
+    line-height: 23px;
+    padding-bottom: 5px;
+  }
+  .proj1 img, .proj2 img, .proj3 img, .proj4 img, .proj5 img, .proj6 img, .proj7 img, .proj8 img, .proj9 img {
+    width: 30%;
+    margin-top: 1.2em;
+  }
+  .img1 {
+    padding-left: 48px;
+  }
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1920px) {
+  .nome {
+    font-size: 25px;
+  }
+  @keyframes cover {
+    0% {
+      opacity: 1;
+      transform: translateX(-200px);
+    }
+    25% {
+      opacity: 2;
+      transform: translateX(-200px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  .menu {
+    font-size: 25px;
+    height: 90px;
+  }
+  .menu-fixo {
+    height: 90px;
+  }
+  .menu ul li {
+    margin-left: 9.8em;
+    margin-top: 30px;
+    padding: 6px;
+  }
+  #about, #mywork, #mycontacts {
+    font-size: 45px;
+    padding-top: 8%;
+    padding-left: 10%;
+    padding-bottom: 15px;
+  }
+  #mycontacts {
+    padding-top: 12%;
+  }
+  .text p {
     font-size: 18px;
-    line-height: 30px;
+    padding: 0 59% 0 8%;
+    line-height: 22px;
+    margin-left: 7px;
+    padding-bottom: 80px;
+    padding-top: 1em;
+  }
+  .text img {
+    width: 38%;
+    margin-right: 6%;
+  }
+  p.linkk {
+    font-size: 22px;
+    padding-bottom: 19px;
+    padding-left: 8%;
+  }
+  .projects {
+    padding: 0 10%;
+  }
+  .projects img {
+    width: 320px;
+  }
+  .contacts1, .contacts2, .contacts3 {
+    font-size: 20px;
+    padding-top: 4px;
+    padding-left: 12%;
+  }
+  .contacts3 {
+    padding-bottom: 100px;
+  }
+  /* pagina projectos */
+  .proj1 h1, .proj2 h1, .proj3 h1, .proj4 h1, .proj5 h1, .proj6 h1, .proj7 h1, .proj8 h1, .proj9 h1 {
+    font-size: 40px;
+    padding-top: 10%;
+    padding-left: 12%;
+  }
+  .proj1 p, .proj2 p, .proj3 p, .proj4 p, .proj5 p, .proj6 p, .proj7 p, .proj8 p, .proj9 p {
+    padding: 1% 40% 0 12%;
+    font-size: 20px;
+    line-height: 28px;
+    padding-bottom: 5px;
+  }
+  .proj1 img, .proj2 img, .proj3 img, .proj4 img, .proj5 img, .proj6 img, .proj7 img, .proj8 img, .proj9 img {
+    width: 30%;
+    margin-top: 5em;
+  }
+  .img1 {
+    padding-left: 57px;
+  }
+}
+
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
+  .nome {
+    font-size: 30px;
+  }
+  @keyframes cover {
+    0% {
+      opacity: 1;
+      transform: translateX(-350px);
+    }
+    25% {
+      opacity: 2;
+      transform: translateX(-350px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  .menu {
+    font-size: 26px;
+    height: 100px;
+  }
+  .menu-fixo {
+    height: 100px;
+  }
+  .menu ul li {
+    margin-left: 12em;
+    margin-top: 32px;
+    padding: 7px;
+  }
+  #about, #mywork, #mycontacts {
+    font-size: 52px;
+    padding-top: 8%;
+    padding-left: 10%;
+    padding-bottom: 25px;
+  }
+  #mycontacts {
+    padding-top: 12%;
+  }
+  .text p {
+    font-size: 20px;
+    padding: 0 49% 0 8%;
+    line-height: 47px;
+    margin-left: 7px;
+    padding-bottom: 90px;
+    padding-top: 1em;
+  }
+  .text img {
+    width: 38%;
+    margin-right: 6%;
+  }
+  p.linkk {
+    font-size: 30px;
+    padding-bottom: 30px;
+    padding-left: 8%;
+  }
+  .projects {
+    padding: 0 10%;
+  }
+  .projects img {
+    width: 450px;
+  }
+  .contacts1, .contacts2, .contacts3 {
+    font-size: 30px;
+    padding-top: 4px;
+    padding-left: 12%;
+  }
+  .contacts3 {
+    padding-bottom: 150px;
+  }
+  /* pagina projectos */
+  .proj1 h1, .proj2 h1, .proj3 h1, .proj4 h1, .proj5 h1, .proj6 h1, .proj7 h1, .proj8 h1, .proj9 h1 {
+    font-size: 42px;
+    padding-top: 10%;
+    padding-left: 12%;
+  }
+  .proj1 p, .proj2 p, .proj3 p, .proj4 p, .proj5 p, .proj6 p, .proj7 p, .proj8 p, .proj9 p {
+    padding: 1% 40% 0 12%;
+    font-size: 20px;
+    line-height: 28px;
+    padding-bottom: 5px;
+  }
+  .proj1 img, .proj2 img, .proj3 img, .proj4 img, .proj5 img, .proj6 img, .proj7 img, .proj8 img, .proj9 img {
+    width: 30%;
+    margin-top: 5em;
+  }
+  .img1 {
+    padding-left: 57px;
   }
 }
